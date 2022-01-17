@@ -14,6 +14,9 @@ module.exports = (config) => {
       plugins: [
         require("@rollup/plugin-commonjs")(),
         require("@rollup/plugin-node-resolve").default(),
+        require("@rollup/plugin-replace")({
+          "process.env.NODE_ENV": JSON.stringify("production"),
+        }),
       ],
       output: {
         format: "iife",
