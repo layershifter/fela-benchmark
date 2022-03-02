@@ -15,7 +15,7 @@
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "benchmark": "^2.1.4",
-    "karma": "^5.0.9",
+    "karma": "^6.3.16",
     "karma-benchmark": "^1.0.4",
     "karma-benchmarkjs-reporter": "^1.0.0",
     "karma-chrome-launcher": "^3.1.0",
