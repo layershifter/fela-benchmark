@@ -30,11 +30,11 @@ suite("insertRule", () => {
   benchmark(
     "1500 rules with try/catch",
     function () {
-      window.cssRules.all.forEach((rule) => {
+      window.cssRules.unsafe.forEach((rule) => {
         try {
           this.sheet.insertRule(rule, this.sheet.cssRules.length);
         } catch (e) {
-          console.error(`There was a problem inserting the following rule:`, e);
+          // console.error(`There was a problem inserting the following rule:`, e);
         }
       });
     },
