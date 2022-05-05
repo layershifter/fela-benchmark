@@ -4,6 +4,13 @@ module.exports = (config) => {
     concurrency: 1,
     singleRun: true,
 
+    customLaunchers: {
+      Chrome_without_security: {
+        base: "ChromeHeadless",
+        flags: ["--disable-gpu", "--no-sandbox"],
+      },
+    },
+
     frameworks: ["benchmark"],
     files: ["bench/**/*.bench.js"],
 
